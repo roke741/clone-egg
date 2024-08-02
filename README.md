@@ -1,9 +1,23 @@
-#Primer paso:
-ejecutar el script en python, instalar dependencias si es necesario
-python main.py
-#Segundo paso:
-instalar las dependencias de node
-npm install 
-#Tercerar paso:
-correr la aplicacion en local
-npm run dev
+
+# CLONE EGG
+
+Clone de la plataforma EGG y curso "FULL STACK"
+
+
+
+
+
+## Instalacion
+
+Ejecutar el script de python 
+```bash
+  python main.py
+```
+Instalar dependencias de node
+```bash
+  npm install
+```
+Correr el proyecto en local
+```bash
+  npm run dev
+```
