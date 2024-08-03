@@ -1,6 +1,15 @@
 import requests
 import json
 import os
+import sys
+
+def get_study_plan(alumno_id):
+    url = f"https://api-widget.egg.live/api/v1/course-content/plan/${alumno_id}/study-plan"
+    response = requests.get(url)
+    response.raise_for_status()
+    data = response.json()
+    return data
+
 
 def get_data(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
@@ -21,10 +30,17 @@ def get_data_from_url(id):
     return data
 
 def main():
+    if len(sys.argv) != 2:
+        print("Uso: python script.py <alumno_id>")
+        sys.exit(1)
+        
+    alumno_id = sys.argv[1]
+    data = get_study_plan(alumno_id)
+    save_json_data('curso_full_stack/temario.json', data)
+    
     data_temario = get_data('curso_full_stack/temario.json')
-
     modulos = data_temario['data']['plan']['modules']
-
+    
     for modulo in modulos:
         print('Modulo:', modulo['title'])
         sections = modulo['sections']
