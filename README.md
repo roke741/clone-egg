@@ -35,15 +35,15 @@ Antes de ejecutar el script de Python o el proyecto de React, asegúrate de tene
     python script.py 65a**********
     ```
 
-## Configuración y Ejecución de un Proyecto de React
+## Configuración y Ejecución del CLONE
 
-1. **Instala las dependencias** del proyecto usando npm:
+1. **Instala las dependencias** del proyecto react usando npm:
 
     ```bash
     npm install
     ```
 
-2. **Inicia el servidor de desarrollo** para ejecutar el proyecto:
+2. **Inicia el servidor de desarrollo** para ejecutar el proyecto de react:
 
     ```bash
     npm run dev
