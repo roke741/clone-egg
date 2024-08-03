@@ -55,7 +55,7 @@ Antes de ejecutar el script de Python o el proyecto de React, asegúrate de tene
 
 - Se probó y funciona con el curso full stack 
 - No se muestran imagenes agregadas al contenido del texto
-- Problemas con la visalizacion de algunas etiquetas como "<code>"
+- Problemas con la visalizacion de algunas etiquetas como ```<code>```
 - En este proyecto no se distribuye ningun contenido de un curso, si no es el usuario que accede a esto mediante su id de usuario
 
 ## Descargo de Responsabilidad
