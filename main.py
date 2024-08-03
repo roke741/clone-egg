@@ -4,7 +4,7 @@ import os
 import sys
 
 def get_study_plan(alumno_id):
-    url = f"https://api-widget.egg.live/api/v1/course-content/plan/${alumno_id}/study-plan"
+    url = f"https://api-widget.egg.live/api/v1/course-content/${alumno_id}/study-plan"
     response = requests.get(url)
     response.raise_for_status()
     data = response.json()
