@@ -15,6 +15,7 @@ const renderOptions = {
       return <img src={node.data.target.fields.file.url} alt={node.data.target.fields.description} />
     },
     [BLOCKS.EMBEDDED_ENTRY]: (node) => {
+
       
     },
     //HIPERVINCULOS
@@ -36,7 +37,12 @@ const renderOptions = {
               />    
             )
         )
-    }
+      }
+      return (
+        <a href={node.data.uri} target="_blank" rel="noopener noreferrer">
+          {node.content[0].value}
+        </a>
+      );
     }
   },
   renderMark: {
@@ -44,7 +50,7 @@ const renderOptions = {
       return (
         <pre className='bg-[#003750] p-7 my-3 rounded-md text-white'>
           <code>
-            <code className='whitespace-pre-wrap font-monospace text-[14px]'>{text}</code>
+            <code className='whitespace-pre-wrap font-monospace text-[12px] font-light leading-3'>{text}</code>
           </code>
         </pre>
       );

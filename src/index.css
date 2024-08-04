@@ -47,9 +47,10 @@ blockquote{
 
 p{
   margin: 14px 0;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   letter-spacing: 0;
+  text-wrap: pretty;
 }
 
 button{
