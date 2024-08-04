@@ -54,12 +54,12 @@ Antes de ejecutar el script de Python o el proyecto de React, asegúrate de tene
 ## Notas
 
 - Se probó y funciona con el curso full stack y qa
-- No se muestran imagenes agregadas al contenido del texto
+- No se muestran imagenes agregadas al contenido del curso o tema
 - Problemas con la visalizacion de algunas etiquetas como ```<code>```
 - En este proyecto no se distribuye ningun contenido de un curso, si no es el usuario que accede a esto mediante su id de usuario
 
 ## Descargo de Responsabilidad
 
-Este proyecto se proporciona "tal cual", sin garantías de ningún tipo, ya sean expresas o implícitas. El uso del script y de las instrucciones proporcionadas es bajo el propio riesgo del usuario. No se garantiza la precisión, integridad o funcionalidad del software y se reserva el derecho de modificar, actualizar y eliminar el contenido en cualquier momento sin previo aviso.
+Este proyecto se proporciona "tal cual", sin garantías de ningún tipo, ya sean expresas o implícitas. El uso del script y de las instrucciones proporcionadas es bajo el propio riesgo del usuario. No se garantiza la precisión, integridad o funcionalidad del software y se reserva el derecho de modificar, actualizar y eliminar el proyecto en cualquier momento sin previo aviso.
 
 No me responsabilizo por ningún daño, ya sea directo, indirecto, especial o consecuente, que pueda surgir del uso de este software y del contenido asociado.
