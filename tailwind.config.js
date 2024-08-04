@@ -9,6 +9,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ['Poppins', 'sans-serif'],
+        monospace: ['Source Code Pro', 'monospace'],
       },
     },
   },
