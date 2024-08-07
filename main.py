@@ -3,8 +3,8 @@ import json
 import os
 import sys
 
-def get_study_plan(alumno_id):
-    url = f"https://api-widget.egg.live/api/v1/course-content/${alumno_id}/study-plan"
+def get_study_plan(curso_id):
+    url = f"https://api-widget.egg.live/api/v1/course-content/${curso_id}/study-plan"
     response = requests.get(url)
     response.raise_for_status()
     data = response.json()
@@ -31,11 +31,11 @@ def get_data_from_url(id):
 
 def main():
     if len(sys.argv) != 2:
-        print("Uso: python script.py <alumno_id>")
+        print("Uso: python script.py <curso_id>")
         sys.exit(1)
         
-    alumno_id = sys.argv[1]
-    data = get_study_plan(alumno_id)
+    curso_id = sys.argv[1]
+    data = get_study_plan(curso_id)
     save_json_data('curso_full_stack/temario.json', data)
     
     data_temario = get_data('curso_full_stack/temario.json')
