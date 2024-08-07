@@ -26,10 +26,10 @@ Antes de ejecutar el script de Python o el proyecto de React, asegúrate de tene
 3. **Ejecuta el script** proporcionando el código del alumno como parámetro. Usa el siguiente comando:
 
     ```bash
-    python script.py <alumno_id>
+    python script.py <curso_id>
     ```
 
-   Reemplaza `<alumno_id>` con el código del alumno. Por ejemplo:
+   Reemplaza `<curso_id>` con el id del curso. Por ejemplo:
 
     ```bash
     python script.py 65a**********
@@ -56,7 +56,7 @@ Antes de ejecutar el script de Python o el proyecto de React, asegúrate de tene
 - Se probó y funciona con el curso full stack y qa
 - No se muestran imagenes agregadas al contenido del curso o tema
 - Problemas con la visalizacion de algunas etiquetas como ```<code>```
-- En este proyecto no se distribuye ningun contenido de un curso, si no es el usuario que accede a esto mediante su id de usuario
+- En este proyecto no se distribuye ningun contenido de un curso, si no es el usuario que accede a esto mediante su id de curso
 
 ## Descargo de Responsabilidad
 
