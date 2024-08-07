@@ -23,7 +23,7 @@ Antes de ejecutar el script de Python o el proyecto de React, asegúrate de tene
     pip install requests
     ```
 
-3. **Ejecuta el script** proporcionando el código del alumno como parámetro. Usa el siguiente comando:
+3. **Ejecuta el script** proporcionando el id del curso como parámetro. Usa el siguiente comando:
 
     ```bash
     python script.py <curso_id>
