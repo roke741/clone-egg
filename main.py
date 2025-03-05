@@ -4,7 +4,7 @@ import os
 import sys
 
 def get_study_plan(curso_id):
-    url = f"https://api-widget.egg.live/api/v1/course-content/${curso_id}/study-plan"
+    url = f"https://api-widget.egg.live/api/v1/course-content/{curso_id}/study-plan"
     response = requests.get(url)
     response.raise_for_status()
     data = response.json()
@@ -31,14 +31,13 @@ def get_data_from_url(id):
 
 def main():
     if len(sys.argv) != 2:
-        print("Uso: python script.py <curso_id>")
+        print("Uso: python main.py <curso_id>")
         sys.exit(1)
         
     curso_id = sys.argv[1]
     data = get_study_plan(curso_id)
-    save_json_data('curso_full_stack/temario.json', data)
-    
-    data_temario = get_data('curso_full_stack/temario.json')
+    save_json_data('data/curses/full-stack/study-plan.json', data)
+    data_temario = get_data('data/curses/full-stack/study-plan.json')
     modulos = data_temario['data']['plan']['modules']
     
     for modulo in modulos:
@@ -46,11 +45,11 @@ def main():
         sections = modulo['sections']
         for section in sections:
             print('\tSeccion:', section['title'])
-            lessons = section['steps']
-            for lesson in lessons:
-                print('\t\tLeccion:', lesson['title'])
-                data_json = get_data_from_url(lesson['_id'])
-                file_path = os.path.join('lecciones', f"Leccion_{lesson['_id']}.json")
+            steps = section['steps']
+            for step in steps:
+                print('\t\tLeccion:', step['title'])
+                data_json = get_data_from_url(step['_id'])
+                file_path = os.path.join('data/curses/full-stack/steps', f"{step['_id']}.json")
                 save = save_json_data(file_path, data_json)
                 print('\t\t\t', save)
 
