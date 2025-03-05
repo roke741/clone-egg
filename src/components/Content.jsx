@@ -67,7 +67,7 @@ function Content({idContent, subtitle}) {
     if (idContent) {
       const getContent = async () => {
         try {
-          const response = await fetch(`/lecciones/Leccion_${idContent}.json`);
+          const response = await fetch(`/data/curses/full-stack/steps/${idContent}.json`);
           const data = await response.json();
           setJson(data);
           setIsLoading(true);
